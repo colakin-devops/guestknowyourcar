@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Car Customizer | Colakin Motors</title>
+
+    <!-- Tailwind + Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#54e029",
+              secondary: "#FFC107",
+              "background-light": "#f6f8f6",
+              "background-dark": "#152111",
+              "text-light": "#333333",
+              "text-dark": "#F5F5F5",
+              surface: {
+                light: "#ffffff",
+                dark: "#1c1c1c",
+              },
+            },
+            fontFamily: {
+              display: "Work Sans",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark min-h-screen"
+  >
+   <!-- ✅ HEADER with larger Colakin logo (left) and profile (right) -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light dark:border-subtle-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Left side: Larger Logo -->
+      <div class="flex items-center gap-3">
+        <img 
+          src="https://www.citypng.com/public/uploads/preview/hd-hyundai-logo-transparent-background-701751694714099qeayslcgqk.png" 
+          alt="Hyundai Logo" 
+          class="h-16 sm:h-19 w-auto p-1 object-contain"
+        />
+      </div>
+
+    </div>
+  </div>
+</header>
+
+      <!-- Main Content -->
+<!-- Main Content -->
+<main class="flex justify-center items-start p-6 md:p-10 bg-gray-50 min-h-screen overflow-y-auto">
+  <!-- White Box Container -->
+  <div class="bg-white dark:bg-background-dark rounded-2xl shadow-xl p-8 w-full max-w-6xl space-y-10">
+    
+    <!-- Dealer Info -->
+    <section>
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] pb-4">Applicant Detail</h2>
+
+  <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex flex-col gap-1 py-4 pr-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Address</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">
+        Hyundai Showroom, 45 MG Road, Mumbai, Maharashtra 400001
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-1 py-4 pl-0 md:pl-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Dealer</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Ramesh Gupta</p>
+    </div>
+
+    <div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pr-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Email</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">
+        ramesh.gupta@mumbaiautohub.in
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pl-0 md:pl-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Contact</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">+91 98765 43210</p>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Car Image Gallery -->
+    <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden rounded-xl shadow-lg">
+      <div class="flex items-stretch p-0 gap-0 w-full">
+        <div class="flex h-full flex-1 flex-col gap-4 min-w-0">
+          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+            style='background-image: url("https://images.financialexpressdigital.com/2020/03/new-verna.jpg");'
+            data-alt="Front view of a modern sports car"></div>
+        </div>
+        <div class="flex h-full flex-1 flex-col gap-4 min-w-0">
+          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+            style='background-image: url("https://stimg.cardekho.com/images/carinteriorimages/930x620/Hyundai/Verna/7729/1616055246929/dashboard-59.jpg?imwidth=420&impolicy=resize");'
+            data-alt="Side profile of a modern sports car"></div>
+        </div>
+        <div class="flex h-full flex-1 flex-col gap-4 min-w-0">
+          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+            style='background-image: url("https://www.motorbeam.com/wp-content/uploads/2020-Hyundai-Verna-Bookings.jpg");'
+            data-alt="Interior cockpit view of a modern sports car"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Details -->
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] pb-4">Hyundai Verna</h2>
+<div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 border-t border-gray-200 dark:border-gray-700">
+<div class="flex flex-col gap-1 py-4 pr-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Model</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">911 Carrera</p>
+</div>
+<div class="flex flex-col gap-1 py-4 pl-0 md:pl-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Year</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">2023</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pr-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Engine</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">3.0L Twin-Turbo Flat-6</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pl-0 md:pl-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Transmission</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">8-Speed Porsche Doppelkupplung (PDK)</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+<div class="flex justify-between items-center">
+<div>
+<p class="text-gray-500 dark:text-gray-400">Estimated Price</p>
+<p class="text-4xl font-bold text-primary">₹ 10,47,000</p>
+</div>
+<button
+  onclick="window.open('https://sandbox-banking.colakin.com/loan-chat', '_blank')"
+  class="flex items-center justify-center gap-2 px-8 py-4 bg-[#4fe232] text-[#142111] font-bold text-lg rounded-lg shadow-md hover:bg-[#45cb2c] transition-colors"
+>
+  <span>Apply loan</span>
+  <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+
+</div>
+
+  </div>
+</main>
+
+    </div>
+  </body>
+</html>

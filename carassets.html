@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Car Customizer | Colakin Motors</title>
+
+    <!-- Tailwind + Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#54e029",
+              secondary: "#FFC107",
+              "background-light": "#f6f8f6",
+              "background-dark": "#152111",
+              "text-light": "#333333",
+              "text-dark": "#F5F5F5",
+              surface: {
+                light: "#ffffff",
+                dark: "#1c1c1c",
+              },
+            },
+            fontFamily: {
+              display: "Work Sans",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark min-h-screen"
+  >
+   <!-- ✅ HEADER with larger Colakin logo (left) and profile (right) -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light dark:border-subtle-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Left side: Larger Logo -->
+      <div class="flex items-center gap-3">
+        <img 
+          src="https://www.citypng.com/public/uploads/preview/hd-hyundai-logo-transparent-background-701751694714099qeayslcgqk.png" 
+          alt="Hyundai Logo" 
+          class="h-16 sm:h-19 w-auto p-1 object-contain"
+        />
+      </div>
+
+    </div>
+  </div>
+</header>
+
+      <!-- Main Content -->
+<!-- Main Content -->
+<main class="flex justify-center items-start p-6 md:p-10 bg-gray-50 min-h-screen overflow-y-auto">
+  <!-- White Box Container -->
+  <div class="bg-white dark:bg-background-dark rounded-2xl shadow-xl p-8 w-full max-w-6xl space-y-10">
+    
+    <!-- Dealer Info -->
+    <section>
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+  <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] pb-4">Applicant Detail</h2>
+
+  <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex flex-col gap-1 py-4 pr-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Address</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">
+        Hyundai Showroom, 45 MG Road, Mumbai, Maharashtra 400001
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-1 py-4 pl-0 md:pl-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Dealer</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Ramesh Gupta</p>
+    </div>
+
+    <div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pr-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Email</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">
+        ramesh.gupta@mumbaiautohub.in
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pl-0 md:pl-2">
+      <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Contact</p>
+      <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">+91 98765 43210</p>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Car Image Gallery -->
+    <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden rounded-xl shadow-lg">
+      <div class="flex items-stretch p-0 gap-0 w-full">
+        <div class="flex h-full flex-1 flex-col gap-4 min-w-0">
+          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+            style='background-image: url("https://images.financialexpressdigital.com/2020/03/new-verna.jpg");'
+            data-alt="Front view of a modern sports car"></div>
+        </div>
+        <div class="flex h-full flex-1 flex-col gap-4 min-w-0">
+          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+            style='background-image: url("https://stimg.cardekho.com/images/carinteriorimages/930x620/Hyundai/Verna/7729/1616055246929/dashboard-59.jpg?imwidth=420&impolicy=resize");'
+            data-alt="Side profile of a modern sports car"></div>
+        </div>
+        <div class="flex h-full flex-1 flex-col gap-4 min-w-0">
+          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+            style='background-image: url("https://www.motorbeam.com/wp-content/uploads/2020-Hyundai-Verna-Bookings.jpg");'
+            data-alt="Interior cockpit view of a modern sports car"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Details -->
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] pb-4">Hyundai Verna</h2>
+<div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 border-t border-gray-200 dark:border-gray-700">
+<div class="flex flex-col gap-1 py-4 pr-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Model</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">911 Carrera</p>
+</div>
+<div class="flex flex-col gap-1 py-4 pl-0 md:pl-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Year</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">2023</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pr-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Engine</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">3.0L Twin-Turbo Flat-6</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-700 py-4 pl-0 md:pl-2">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Transmission</p>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">8-Speed Porsche Doppelkupplung (PDK)</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+<h3 class="text-2xl font-bold mb-4">Customize Your Ride</h3>
+<div class="flex flex-col">
+<details class="flex flex-col border-b border-b-gray-200 dark:border-b-gray-700 py-2 group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+<p class="text-lg font-semibold leading-normal">Exterior Accessories</p>
+<span class="material-symbols-outlined transform group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-2 pb-4 space-y-4">
+<label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<input class="addon-checkbox"
+    data-price="124000" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary" type="checkbox"/>
+<span class="text-text-light dark:text-text-dark">Carbon Fiber Spoiler (+ ₹ 1,24,000)</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<input class="addon-checkbox"
+    data-price="137000" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary" type="checkbox"/>
+<span class="text-text-light dark:text-text-dark">Sport Design Side Skirts (+ ₹ 1,37,000)</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<input class="addon-checkbox"
+    data-price="117000" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary" type="checkbox"/>
+<span class="text-text-light dark:text-text-dark">20"/21" Carrera S Wheels (+ ₹ 1,17,000)</span>
+</label>
+</div>
+</details>
+<details class="flex flex-col border-b border-b-gray-200 dark:border-b-gray-700 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+<p class="text-lg font-semibold leading-normal">Interior Features</p>
+<span class="material-symbols-outlined transform group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-2 pb-4 space-y-4">
+<label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<input class="addon-checkbox"
+    data-price="107000" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary" type="checkbox"/>
+<span class="text-text-light dark:text-text-dark">Leather Interior in Black/Bordeaux Red (+ ₹ 1,07,000)</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<input class="addon-checkbox"
+    data-price="104000" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary" type="checkbox"/>
+<span class="text-text-light dark:text-text-dark">Bose® Surround Sound System (+ ₹ 1,04,000)</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<input class="addon-checkbox"
+    data-price="105000" class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary" type="checkbox"/>
+<span class="text-text-light dark:text-text-dark">Adaptive Sport Seats Plus (18-way) with Memory Package (+ ₹ 1,05,000)</span>
+</label>
+</div>
+</details>
+<details class="flex flex-col py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+<p class="text-lg font-semibold leading-normal">Color</p>
+<span class="material-symbols-outlined transform group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-2 pb-4">
+<p class="text-text-light dark:text-text-dark mb-2">Exterior Color</p>
+<div class="flex items-center space-x-3">
+<button class="color-btn w-8 h-8 rounded-full bg-red-600"></button>
+<button class="color-btn w-8 h-8 rounded-full bg-blue-800"></button>
+<button class="color-btn w-8 h-8 rounded-full bg-gray-900"></button>
+<button class="color-btn w-8 h-8 rounded-full bg-yellow-400"></button>
+</div>
+</div>
+</details>
+</div>
+</div>
+<!-- Price Section -->
+<div class="relative flex items-center justify-between bg-white dark:bg-background-dark rounded-xl shadow-lg p-6 gap-4">
+  
+  <!-- Left: Price content -->
+  <div>
+    <p class="text-gray-500 dark:text-gray-400">Estimated Price</p>
+
+    <!-- Price text (visible by default) -->
+    <p id="priceText" class="text-4xl font-bold text-primary">₹ 10,47,000</p>
+
+    <!-- Editable input (hidden initially) -->
+    <input id="priceInput"
+           type="text"
+           class="hidden text-4xl font-bold text-primary bg-transparent border-b border-primary focus:outline-none"
+           value="1047000"
+           onblur="savePrice()">
+  </div>
+
+  <!-- Right: Apply Loan button -->
+  <button
+    onclick="window.location.href='./signup.html'"
+    class="flex items-center justify-center gap-2 px-6 py-3 bg-[#4fe232] text-[#142111] font-semibold rounded-lg shadow-md hover:bg-[#45cb2c] transition-colors"
+  >
+    <span>Apply Loan</span>
+    <span class="material-symbols-outlined">arrow_forward</span>
+  </button>
+
+  <!-- Edit Button (top-right overlapping) -->
+  <button onclick="editPrice()" class="absolute top-3 right-3 text-gray-600 hover:text-primary">
+    <span class="material-symbols-outlined">edit</span>
+  </button>
+</div>
+
+
+</main>
+    </div>
+<script>
+  const basePrice = 1047000; // Starting price
+  let selectedExtra = 0;
+
+  function editPrice() {
+    document.getElementById("priceText").classList.add("hidden");
+    document.getElementById("priceInput").classList.remove("hidden");
+    document.getElementById("priceInput").focus();
+  }
+
+  function savePrice() {
+    let priceInput = document.getElementById("priceInput");
+    let priceText = document.getElementById("priceText");
+
+    let newPrice = parseInt(priceInput.value.replace(/[^0-9]/g, "")) || basePrice;
+    priceInput.value = newPrice;
+
+    priceText.textContent = formatIndianCurrency(newPrice + selectedExtra);
+    
+    priceInput.classList.add("hidden");
+    priceText.classList.remove("hidden");
+  }
+
+  function formatIndianCurrency(amount) {
+    return "₹ " + amount.toLocaleString("en-IN");
+  }
+
+  // ✅ Checkbox add-on price update
+  document.querySelectorAll(".addon-checkbox").forEach(chk => {
+    chk.addEventListener("change", () => {
+      let price = parseInt(chk.dataset.price);
+      selectedExtra += chk.checked ? price : -price;
+      savePrice();
+    });
+  });
+
+  document.querySelectorAll(".color-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".color-btn").forEach(b => 
+      b.classList.remove("ring-4", "ring-primary")
+    );
+    btn.classList.add("ring-4", "ring-primary");
+  });
+});
+
+</script>
+
+  </body>
+</html>

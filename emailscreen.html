@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Know My Car - Loan Eligibility</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#4fe232",
+        "background-light": "#f6f8f6",
+        "content-light": "#142111",
+        "subtle-light": "#e9eee8",
+      },
+      fontFamily: {
+        display: ["Inter", "sans-serif"],
+      },
+      borderRadius: {
+        lg: "1rem",
+      },
+    },
+  },
+};
+</script>
+</head>
+<body class="bg-background-light font-display text-content-light">
+  
+     <!-- ✅ HEADER with larger Colakin logo (left) and profile (right) -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light dark:border-subtle-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Left side: Larger Logo -->
+      <div class="flex items-center gap-3">
+        <img 
+          src="https://www.citypng.com/public/uploads/preview/hd-hyundai-logo-transparent-background-701751694714099qeayslcgqk.png" 
+          alt="Hyundai Logo" 
+          class="h-16 sm:h-19 w-auto p-1 object-contain"
+        />
+      </div>
+
+    </div>
+  </div>
+</header>
+
+  <div class="flex min-h-screen flex-col items-center justify-center p-4">
+    <div class="w-full max-w-2xl bg-white rounded-xl shadow-lg border border-subtle-light overflow-hidden">
+      
+      <!-- Header -->
+      <div class="bg-subtle-light px-6 py-4 border-b border-subtle-light">
+        <h1 class="text-xl font-bold text-content-light">Your 'Know my Car' Quotation is Ready!</h1>
+        <p class="text-sm text-content-light/70">from the Sales Manager &lt;deals@knowmycar.com&gt;</p>
+      </div>
+
+      <!-- Body -->
+      <div class="p-8 space-y-8 text-center">
+        <div>
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/20">
+            <span class="material-symbols-outlined text-4xl text-primary">directions_car</span>
+          </div>
+          <h2 class="mt-6 text-3xl font-extrabold tracking-tight">Your Car Quote Has Been Customized!</h2>
+          <p class="mt-4 max-w-md mx-auto text-md text-content-light/80">
+            Great news! Your dealer has customized the best quotation for your selected car model.  
+            You’re just one step away from checking your **loan eligibility** and proceeding with your purchase.
+          </p>
+        </div>
+
+        <!-- Next Step -->
+        <div class="space-y-6">
+          <div class="text-center bg-subtle-light/50 p-6 rounded-lg border border-subtle-light">
+            <h3 class="text-lg font-semibold">Next Step: Apply for Your Car Loan</h3>
+            <p class="mt-2 text-sm text-content-light/70">
+              Click below to check your loan eligibility instantly and explore financing options that suit you best.
+            </p>
+          </div>
+
+          <!-- Button -->
+          <button
+            onclick="window.location.href='./loan-check.html'"
+            class="group relative flex w-full justify-center rounded-lg bg-[#4fe232] px-4 py-3 text-base font-bold text-[#142111] hover:bg-[#45cb2c] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            type="button"
+          >
+            <span class="material-symbols-outlined mr-2">arrow_forward</span>
+            Check Loan Eligibility
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

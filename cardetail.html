@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Car Customizer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#003366",
+              secondary: "#FFC107",
+              "background-light": "#F5F5F5",
+              "background-dark": "#101c22",
+              "text-light": "#333333",
+              "text-dark": "#F5F5F5",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a1f25",
+            },
+            fontFamily: {
+              display: ["Work Sans", "Noto Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+  >
+    <!-- ✅ HEADER with larger Colakin logo (left) and profile (right) -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light dark:border-subtle-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Left side: Larger Logo -->
+      <div class="flex items-center gap-3">
+        <img 
+          src="https://www.citypng.com/public/uploads/preview/hd-hyundai-logo-transparent-background-701751694714099qeayslcgqk.png" 
+          alt="Hyundai Logo" 
+          class="h-16 sm:h-19 w-auto p-1 object-contain"
+        />
+      </div>
+
+    </div>
+  </div>
+</header>
+      <!-- Main Content -->
+      <main class="flex-1 px-6 md:px-10 lg:px-20 py-5 overflow-y-auto">
+        <div class="layout-content-container flex flex-col max-w-6xl mx-auto gap-8">
+          <div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
+            <h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] pb-4">
+              Choose Your Car
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Car 1 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+                <div onclick="window.location.href='./carassets.html'"
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                  style='background-image: url("https://trident-group.s3.ap-south-1.amazonaws.com/hyundai/models/colors/1698916756.png");'></div>
+                <div class="p-4">
+                  <h3 class="text-lg font-bold">Hyundai Grand i10 Nios</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Starting at ₹ 5,47,000</p>
+                </div>
+              </div>
+
+              <!-- Car 2 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+                <div onclick="window.location.href='./carassets.html'"
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                  style='background-image: url("https://spn-sta.spinny.com/blog/20220228144239/new-Hyundai-Tucson.jpg");'></div>
+                <div class="p-4">
+                  <h3 class="text-lg font-bold">Hyundai Exter</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Starting at ₹ 5,68,000</p>
+                </div>
+              </div>
+
+              <!-- Car 3 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+                <div onclick="window.location.href='./carassets.html'"
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                  style='background-image: url("https://trident-group.s3.ap-south-1.amazonaws.com/hyundai/models/colors/1698916813.png");'></div>
+                <div class="p-4">
+                  <h3 class="text-lg font-bold">Hyundai Aura</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Starting at ₹ 8,47,000</p>
+                </div>
+              </div>
+
+              <!-- Car 4 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+                <div onclick="window.location.href='./carassets.html'"
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                  style='background-image: url("https://imgd.aeplcdn.com/370x208/cw/ec/24192/Exterior-76892.jpg?wm=0&q=80");'></div>
+                <div class="p-4">
+                  <h3 class="text-lg font-bold">Hyundai Creta</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Starting at ₹ 10,47,000</p>
+                </div>
+              </div>
+
+              <!-- Car 5 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+                <div onclick="window.location.href='./carassets.html'"
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                  style='background-image: url("https://images.financialexpressdigital.com/2020/03/new-verna.jpg");'></div>
+                <div class="p-4">
+                  <h3 class="text-lg font-bold">Hyundai Verna</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Starting at ₹ 10,67,000</p>
+                </div>
+              </div>
+
+              <!-- Car 6 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer">
+                <div onclick="window.location.href='./carassets.html'"
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                  style='background-image: url("https://imgd.aeplcdn.com/664x374/cw/ec/25465/Hyundai-Verna-Right-Front-Three-Quarter-105274.jpg?v=201711021421&q=80");'></div>
+                <div class="p-4">
+                  <h3 class="text-lg font-bold">Hyundai Alcazar</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Starting at ₹ 14,47,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

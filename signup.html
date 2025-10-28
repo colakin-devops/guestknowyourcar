@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Information</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-dark": "#1A202C",
+              "secondary-grey": "#4A5568",
+              "accent-green": "#48BB78",
+              "cta-gradient-green-start": "#48BB78",
+              "cta-gradient-green-end": "#38A169",
+              "warning-fail-orange": "#ED8936",
+              "background": "#F7FAFC",
+              "card-container": "#FFFFFF",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1A202C",
+              "text-light": "#2D3748",
+              "text-dark": "#E2E8F0",
+            },
+            fontFamily: {
+              heading: ["Poppins", "Montserrat", "sans-serif"],
+              body: ["Inter", "Open Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body class="bg-background font-body text-secondary-grey">
+    
+    <!-- ✅ HEADER with larger Hyundai logo -->
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-subtle-light dark:border-subtle-dark">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-3">
+            <img 
+              src="https://www.citypng.com/public/uploads/preview/hd-hyundai-logo-transparent-background-701751694714099qeayslcgqk.png" 
+              alt="Hyundai Logo" 
+              class="h-16 sm:h-19 w-auto p-1 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ✅ Main Content -->
+    <main class="flex-1 p-8 lg:p-12 bg-background overflow-y-auto">
+      <div class="max-w-7xl mx-auto flex flex-col gap-8 bg-card-container p-6 lg:p-8 rounded-xl shadow-sm">
+
+        <div class="flex justify-between items-center">
+          <h1 class="text-primary-dark text-3xl lg:text-4xl font-bold font-heading">
+            Invite Applicant
+          </h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+          <!-- ✅ Applicant Details -->
+          <div class="md:col-span-6 flex flex-col gap-6">
+            <h2 class="text-primary-dark text-xl lg:text-2xl font-bold font-heading">Applicant Details</h2>
+            <div class="flex flex-col gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <label class="flex flex-col">
+                  <p class="pb-2 font-medium text-secondary-grey">First Name</p>
+                  <input class="form-input rounded-lg border border-gray-300 bg-background h-12 p-3 focus:ring-2 focus:ring-accent-green/50"
+                         value="Isravel" />
+                </label>
+
+                <label class="flex flex-col">
+                  <p class="pb-2 font-medium text-secondary-grey">Last Name</p>
+                  <input class="form-input rounded-lg border border-gray-300 bg-background h-12 p-3 focus:ring-2 focus:ring-accent-green/50"
+                         value="S" />
+                </label>
+
+              </div>
+
+              <label class="flex flex-col">
+                <p class="pb-2 font-medium text-secondary-grey">Email Address</p>
+                <input class="form-input rounded-lg border border-gray-300 bg-background h-12 p-3 focus:ring-2 focus:ring-accent-green/50"
+                       value="israel@gmail.com" />
+              </label>
+            </div>
+          </div>
+
+          <!-- ✅ Sales Manager Details -->
+          <div class="md:col-span-6 flex flex-col gap-6">
+            <h2 class="text-primary-dark text-xl lg:text-2xl font-bold font-heading">Sales Manager Details</h2>
+            <div class="flex flex-col gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <label class="flex flex-col">
+                  <p class="pb-2 font-medium text-secondary-grey">First Name</p>
+                  <input class="form-input rounded-lg border border-gray-300 bg-background h-12 p-3 focus:ring-2 focus:ring-accent-green/50"
+                         value="Ramesh" />
+                </label>
+
+                <label class="flex flex-col">
+                  <p class="pb-2 font-medium text-secondary-grey">Last Name</p>
+                  <input class="form-input rounded-lg border border-gray-300 bg-background h-12 p-3 focus:ring-2 focus:ring-accent-green/50"
+                         value="Gupta" />
+                </label>
+
+              </div>
+
+              <label class="flex flex-col">
+                <p class="pb-2 font-medium text-secondary-grey">Email Address</p>
+                <input class="form-input rounded-lg border border-gray-300 bg-background h-12 p-3 focus:ring-2 focus:ring-accent-green/50"
+                       value="ramesh.gupta@mumbaiautohub.in" />
+              </label>
+            </div>
+          </div>
+
+          <!-- ✅ Message -->
+          <div class="md:col-span-12">
+            <label class="flex flex-col">
+              <p class="pb-2 font-medium text-secondary-grey">Message (Optional)</p>
+              <textarea class="form-textarea rounded-lg border border-gray-300 bg-background min-h-32 p-3 focus:ring-2 focus:ring-accent-green/50"></textarea>
+            </label>
+          </div>
+
+        </div>
+
+        <!-- ✅ Action Buttons -->
+        <div class="flex flex-col sm:flex-row justify-end items-center gap-4 mt-4">
+          <button onclick="window.location.href='./carassets.html'" class="flex items-center justify-center gap-2 rounded-lg bg-gray-200 px-6 py-3 text-primary-dark font-semibold hover:bg-gray-300">
+            <span class="material-symbols-outlined">arrow_back</span> Back
+          </button>
+
+          <button onclick="window.location.href='./emailconfirmation.html'" class="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cta-gradient-green-start to-cta-gradient-green-end px-6 py-3 text-white font-semibold hover:shadow-lg">
+            Send Email <span class="material-symbols-outlined">send</span>
+          </button>
+        </div>
+
+      </div>
+    </main>
+
+  </body>
+</html>
