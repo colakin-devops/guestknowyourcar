@@ -111,6 +111,19 @@
       <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Contact</p>
       <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">+91 98765 43210</p>
     </div>
+
+        <div>
+      <p class="text-sm text-text-light/60 dark:text-text-dark/60 mb-1">Employee Type</p>
+      <select
+        id="employeeType"
+        class="w-full border-b-2 border-gray-300 focus:border-primary bg-transparent text-lg font-semibold p-2 outline-none"
+        onchange="calculateTotal()"
+      >
+        <option value="salary" selected>Salary</option>
+        <option value="non-salary">Non-Salary</option>
+      </select>
+    </div>
+    
   </div>
 </div>
     </section>
