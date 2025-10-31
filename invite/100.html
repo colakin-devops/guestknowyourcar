@@ -247,12 +247,10 @@
       <p class="text-sm text-text-light/60 dark:text-text-dark/60">Road Tax</p>
       <p class="text-lg font-semibold">₹ 25,000.00</p>
     </div>
-
-            <!-- Total Cost Display -->
-        <div>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Total Cost (100%)</p>
-          <p id="totalCost" class="text-lg font-semibold">₹ 8,82,389.00</p>
-        </div>
+    <div>
+      <p class="text-sm text-text-light/60 dark:text-text-dark/60 mb-1">Employee Type</p>
+      <p id="employeeType" class="text-lg font-semibold">Salary</p>
+    </div>
 
   </div>
 </div>
@@ -264,18 +262,17 @@
   
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-
-    <!-- Employee Type -->
-    <div>
-      <p class="text-sm text-text-light/60 dark:text-text-dark/60 mb-1">Employee Type</p>
-      <p id="employeeType" class="text-lg font-semibold">Salary</p>
-    </div>
-
         <!-- Margin -->
         <div>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Margin (10%)</p>
           <p id="marginCost" class="text-lg font-semibold">₹ 88,238.90</p>
         </div>
+
+            <!-- Total Cost Display -->
+        <div>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Total Cost (100%)</p>
+          <p id="totalCost" class="text-lg font-semibold">₹ 8,82,389.00</p>
+        </div>        
 
     <!-- Maximum Loan Amount -->
     <div class="sm:col-span-2">
@@ -288,24 +285,54 @@
 
 
 <div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-6">
-<div class="flex justify-between items-center">
-<div>
-<p class="text-gray-500 dark:text-gray-400">Total Price</p>
-<p class="text-4xl font-bold text-primary">₹ 7,94,150.00</p>
-</div>
-<button
-  onclick="window.open('https://sandbox-banking.colakin.com/loan-chat', '_blank')"
-  class="flex items-center justify-center gap-2 px-8 py-4 bg-[#4fe232] text-[#142111] font-bold text-lg rounded-lg shadow-md hover:bg-[#45cb2c] transition-colors"
->
-  <span>Apply loan</span>
-  <span class="material-symbols-outlined">arrow_forward</span>
-</button>
+  <div class="flex justify-between items-center flex-wrap gap-4">
+    <div>
+      <p class="text-gray-500 dark:text-gray-400">Total Price</p>
+      <input
+        type="text"
+        id="totalPriceInput"
+        value="₹ 7,94,150.10"
+        class="w-60 text-4xl font-bold text-primary bg-transparent border-b-2 border-primary focus:outline-none focus:border-green-600 transition-colors"
+      />
+    </div>
 
-</div>
-
+    <button
+      onclick="validateAndApplyLoan()"
+      class="flex items-center justify-center gap-2 px-8 py-4 bg-[#4fe232] text-[#142111] font-bold text-lg rounded-lg shadow-md hover:bg-[#45cb2c] transition-colors"
+    >
+      <span>Apply loan</span>
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </button>
   </div>
+</div>
+
 </main>
 
     </div>
+
+    <!-- ✅ JS Validation Script -->
+<script>
+  function parseCurrency(value) {
+    // Remove ₹ and commas, then parse float
+    return parseFloat(value.replace(/[₹, ]/g, "")) || 0;
+  }
+
+  function validateAndApplyLoan() {
+    const maxLoanAmount = 794150.10;
+    const totalPriceInput = document.getElementById("totalPriceInput").value;
+    const enteredPrice = parseCurrency(totalPriceInput);
+
+    if (enteredPrice > maxLoanAmount) {
+      // ❌ Show popup alert
+      alert("Not allowed — value exceeds the maximum loan amount (₹ 7,94,150.10)");
+    } else if (enteredPrice <= 0) {
+      alert("Please enter a valid amount before applying for a loan.");
+    } else {
+      // ✅ Open the loan chat page
+      window.open("https://sandbox-banking.colakin.com/loan-chat", "_blank");
+    }
+  }
+</script>
+
   </body>
 </html>
